@@ -28,7 +28,7 @@ const getMaxElement = function (arr) {
 };
 
 const getRandomNumberFromRange = function (min, max) {
-  return Math.ceil(Math.random() * (min - max) + max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 };
 
 window.renderStatistics = function (ctx, players, times) {
